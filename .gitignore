@@ -36,7 +36,3 @@ Makefile*
 # QtCtreator CMake
 CMakeLists.txt.user
 
-# Build output
-release
-debug
-
