@@ -61,3 +61,8 @@ bool ScientistService::connectComputer(int scientistID, int computerID)
 {
     return scientistRepo.connectComputer(scientistID, computerID);
 }
+
+std::vector<Computer> ScientistService::getComputers(int scientistID)
+{
+    return scientistRepo.getComputers(scientistID);
+}

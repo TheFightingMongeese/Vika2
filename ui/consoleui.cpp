@@ -464,6 +464,15 @@ void ConsoleUI::displayScientists(std::vector<Scientist> scientists)
              << setw(8) << std::left << scientistGender
              << setw(12) << std::left << scientists.at(i).getYearBorn()
              << setw(12) << std::left << died << endl;
+
+        /*cout << setw(20) << std::left;
+        std::vector<Computer> computers = scientistService.getComputers(scientists.at(i).getID());
+        for (unsigned int i = 0; i < computers.size(); i++)
+        {
+             cout << computers.at(i).getName() << ",";
+        }
+
+        cout << endl;*/
     }
 }
 

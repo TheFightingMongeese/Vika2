@@ -6,6 +6,7 @@
 
 #include "db/database.h"
 #include "models/scientist.h"
+#include "models/computer.h"
 
 
 /**
@@ -37,6 +38,8 @@ public:
     bool addScientist(Scientist scientist);
 
     bool connectComputer(int scientistID, int computerID);
+
+    std::vector<Computer> getComputers(int scientistID);
 
 private:
     Database db;
