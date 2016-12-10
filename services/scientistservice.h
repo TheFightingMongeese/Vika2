@@ -35,6 +35,7 @@ public:
     enum addStatus addScientist(Scientist scientist);
 
     bool connectComputer(int scientistID, int computerID);
+    std::vector<Computer> getComputers(int scientistID);
 private:
     ScientistRepository scientistRepo;
 };
